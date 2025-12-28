@@ -3,7 +3,20 @@
 {% block title %}Контакты{% endblock %}
 
 {% block content %}
-<h2>Контакты</h2>
-<p>Свяжитесь с нами через форму ниже.</p>
-<!-- Здесь может быть форма обратной связи -->
+<h2>Свяжитесь с нами!</h2>
+
+<form action="#" method="post">
+<label for="name">Имя:</label><br/>
+<input type="text" id="name" name="name"><br/>
+
+<label for="email">Email:</label><br/>
+<input type="email" id="email" name="email"><br/>
+
+<label for="message">Сообщение:</label><br/>
+<textarea id="message" name="message"></textarea><br/>
+
+<button type="submit">Отправить сообщение</button>
+</form>
+
+<p>Email: contact@cosmetics.com | Телефон: +7 (123) 456-78-90</p>
 {% endblock %}
