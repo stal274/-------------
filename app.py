@@ -39,9 +39,9 @@ def contact():
 def article(article_id):
     return render_template('article.html', article_id=article_id)
 
-@app.route('/news/<int:news_id>')
+@app.route('/news')
 def news():
-    return render_template('news.html,news_id=news_id')
+    return render_template('news.html')
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():

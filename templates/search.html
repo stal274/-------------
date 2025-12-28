@@ -1,4 +1,7 @@
 <!-- Для поиска можно создать отдельную страницу или добавить форму на главной странице -->
+{% extends "base.html" %}
+
+{% block title %}Поиск {% endblock %}
 <form action="/search" method="get">
     <input type="text" name="query" placeholder="Введите запрос...">
     <button type="submit">Найти</button>
