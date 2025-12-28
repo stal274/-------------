@@ -1,11 +1,12 @@
-{% extends "base.html" %}
-
-{% block title %}Поиск{% endblock %}
-
-{% block content %}
-<h2>Поиск</h2>
-<form action="#" method="get">
+<!-- Для поиска можно создать отдельную страницу или добавить форму на главной странице -->
+<form action="/search" method="get">
     <input type="text" name="query" placeholder="Введите запрос...">
     <button type="submit">Найти</button>
-</form>
-{% endblock %}
+    </form>
+    
+    <!-- Результаты поиска будут отображаться здесь -->
+    <div id="search-results"></div>
+    
+    <script>
+    // Здесь можно добавить JavaScript для обработки результатов поиска через AJAX (по желанию).
+    </script>
