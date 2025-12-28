@@ -20,5 +20,5 @@
 </p>
 
 <!-- Добавьте изображения или другие элементы -->
-<img src="{{ url_for('static', filename='images/article' + str(article_id) + '.jpg') }}" alt="Изображение статьи {{ article_id }}" />
+<img src="{{ url_for('static', filename='images/article' + article_id|string + '.jpg') }}" alt="Изображение статьи {{ article_id }}" />
 {% endblock %}

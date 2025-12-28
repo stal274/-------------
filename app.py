@@ -35,6 +35,10 @@ def about():
 def contact():
     return render_template('contact.html')
 
+@app.route('/article')
+def article():
+    return render_template('article.html')
+
 @app.route('/news')
 def news():
     return render_template('news.html')
