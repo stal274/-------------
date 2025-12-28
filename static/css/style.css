@@ -1,12 +1,35 @@
 body {
     font-family: Arial, sans-serif;
 }
-
+header {
+    background-color: #f8f9fa;
+}
 nav ul {
     list-style-type: none;
 }
-
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+ display: inline;
+ margin-right: 10px;
+}
+.main {
+ padding: 20px;
+}
+footer {
+ text-align: center;
+ margin-top: 20px;
+}
+.flashes {
+ color: red;
+}
+.article-list,
+.news-list {
+ list-style-type: none;
+ padding-left: 0;
+}
+.article-list li,
+.news-list li {
+ margin-bottom: 10px;
+}
+form {
+ margin-top: 20px;
 }
