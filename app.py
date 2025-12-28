@@ -35,13 +35,13 @@ def about():
 def contact():
     return render_template('contact.html')
 
-@app.route('/article')
-def article():
-    return render_template('article.html')
+@app.route('/article/<int:article_id>')
+def article(article_id):
+    return render_template('article.html', article_id=article_id)
 
-@app.route('/news')
+@app.route('/news/<int:news_id>')
 def news():
-    return render_template('news.html')
+    return render_template('news.html,news_id=news_id')
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
