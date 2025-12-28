@@ -1,6 +1,14 @@
-{% extends "base.html" %}
-{% block content %}
-<h1>404 - Страница не найдена</h1>
-<p>Извините, но запрашиваемая страница не существует.</p>
-<a href="{{ url_for('index') }}">Вернуться на главную</a>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>404 - Страница не найдена!</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body style='text-align:center;'>
+<h1 style='color:red;'>404 - Страница не найдена!</h1 >
+<p>Извините, но запрашиваемая вами страница не найдена.<br/>Вернитесь на<a href="/"> главную страницу.</a>.</p>.
+<footer>&copy; 2023 Производитель косметики.</footer >
+ </body >
+ </html >
